@@ -1,0 +1,21 @@
+def determine_color(s)
+    column = ord(s[0]) - ord('a') + 1   # Convert letter to number
+    row = int(s[1])                     # Convert digit to integer
+    
+    if (column + row) % 2 == 0
+        return Black
+    else
+        return White
+
+def main()
+    import sys
+    input = sys.stdin.read
+    s = input().strip()  # Read the input string
+    
+    # Call the user logic function and print the output
+    result = determine_color(s)
+    print(result)
+
+if __name__ == __main__
+    main()
+                            
